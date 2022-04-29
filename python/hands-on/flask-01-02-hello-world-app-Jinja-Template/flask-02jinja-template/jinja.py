@@ -4,11 +4,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def head():
-    return render_template('index.html', number1 = 7000, number2 = 9000)
+    return render_template('index.html', number1 = 70, number2 = 90)
 
 @app.route('/mult')
 def number():
-    var1, var2 = 3040, 7060
+    var1, var2 = 40, 60
     return render_template('body.html', num1 = var1, num2 = var2, multiplication = var1*var2)
 
 if __name__ == '__main__':
